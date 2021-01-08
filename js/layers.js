@@ -22,7 +22,7 @@ addLayer("fantasy", { //https://raw.githack.com/DragonTheCoder/The-Modding-Tree/
     },
     row: 0, // Row the layer is in on the tree (0 is the first row)
     hotkeys: [
-        {key: "f", description: "F: Reset for imagination points", onPress(F){if (canReset(this.layer)) doReset(this.layer)}},
+        {key: "f", description: "I: strenghten your imagination, with so called Imagination points", onPress(F){if (canReset(this.layer)) doReset(this.layer)}},
     ],
     layerShown(){return true}
 })
