@@ -1,9 +1,9 @@
 let modInfo = {
-	name: "The ??? Tree",
-	id: "mymod",
-	author: "nobody",
-	pointsName: "points",
-	discordName: "",
+	name: "The Fantasy Tree",
+	id: "Friendship and Dragon Magic",
+	author: "Dragon",
+	pointsName: "Fantasy points",
+	discordName: "DragonGamer",
 	discordLink: "",
 	initialStartPoints: new Decimal (10), // Used for hard resets and new players
 	
