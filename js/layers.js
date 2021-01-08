@@ -26,3 +26,12 @@ addLayer("fantasy", { //https://raw.githack.com/DragonTheCoder/The-Modding-Tree/
     ],
     layerShown(){return true}
 })
+upgrades:{
+    rows:2
+    cols:3
+    11; {
+        Title:Imagination
+        description: "also known as magic"
+        cost: new Decimal(100)
+    }
+}
