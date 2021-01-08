@@ -24,14 +24,14 @@ addLayer("fantasy", { //https://raw.githack.com/DragonTheCoder/The-Modding-Tree/
     hotkeys: [
         {key: "f", description: "I: strenghten your imagination, with so called Imagination points", onPress(F){if (canReset(this.layer)) doReset(this.layer)}},
     ],
-    layerShown(){return true}
-})
-upgrades:{
-    rows:2
-    cols:3
-    11; {
-        Title:Imagination
-        description: "also known as magic"
-        cost: new Decimal(100)
+    layerShown(){return true},
+    upgrades:{
+        rows:2,
+        cols:3,
+        11:{
+            title:test,
+            description: "test",
+            cost: new Decimal(100),
+        }
     }
-}
+})
