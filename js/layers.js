@@ -29,16 +29,18 @@ addLayer("fantasy", { //https://raw.githack.com/DragonTheCoder/The-Modding-Tree/
         rows:2,
         cols:3,
         11:{
-            title:"Drawing",
-            description:"draw something, and you will become double as good at imagining things",
+            title:"imagine things",
+            description:"which mutiplies your fantasy gain by 2",
             cost: new Decimal(1),
             effect(){
-                return player[this.layer].points.add(1).log(10).add(2);}
+                return player.points.add(1).log(10).add(1);}
         },
         12:{
-            title:"imagine things",
-            description:"which mutiplies your fantasy gain by 2.5",
-            cost: new Decimal(4),
-        }
+            title:"turn it into Drawings",
+            description:"draw something, and you will become double as good at imagining things",
+            cost: new Decimal(5),
+            effect(){
+                return player[this.layer].points.add(1).log(10).add(1);}
+        },
     }
 })
