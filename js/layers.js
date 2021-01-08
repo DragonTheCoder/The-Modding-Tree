@@ -33,7 +33,7 @@ addLayer("fantasy", { //https://raw.githack.com/DragonTheCoder/The-Modding-Tree/
             description:"draw something, and you will become double as good at imagining things",
             cost: new Decimal(1),
             effect(){
-                return player[this.layer].points.add(1).log(10).add(1);}
+                return player[this.layer].points.add(1).log(10).add(2);}
         },
         12:{
             title:"imagine things",
