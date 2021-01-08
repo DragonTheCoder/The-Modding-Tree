@@ -28,8 +28,8 @@ addLayer("fantasy", { //https://raw.githack.com/DragonTheCoder/The-Modding-Tree/
     upgrades:{
         rows:2,
         cols:3,
-        "11":{
-            title:test,
+        11:{
+            title:"test",
             description: "test",
             cost: new Decimal(100),
         }
