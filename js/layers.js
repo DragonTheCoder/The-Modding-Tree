@@ -22,16 +22,23 @@ addLayer("fantasy", { //https://raw.githack.com/DragonTheCoder/The-Modding-Tree/
     },
     row: 0, // Row the layer is in on the tree (0 is the first row)
     hotkeys: [
-        {key: "f", description: "I: strenghten your imagination, with so called Imagination points", onPress(F){if (canReset(this.layer)) doReset(this.layer)}},
+        {key: "I", description: "I: strenghten your imagination, with so called Imagination points", onPress(F){if (canReset(this.layer)) doReset(this.layer)}},
     ],
     layerShown(){return true},
     upgrades:{
         rows:2,
         cols:3,
         11:{
-            title:"test",
-            description: "test",
-            cost: new Decimal(100),
+            title:"Drawing",
+            description:"draw something, and you will become double as good at imagining things",
+            cost: new Decimal(1),
+            effect(){
+                return player[this.layer].points.add(1).log(10).add(1);}
+        },
+        12:{
+            title:"imagine things",
+            description:"which mutiplies your fantasy gain by 2.5",
+            cost: new Decimal(4),
         }
     }
 })
